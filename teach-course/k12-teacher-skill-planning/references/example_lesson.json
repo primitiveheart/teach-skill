@@ -1,0 +1,278 @@
+{
+  "theme": {
+    "primary": "#B42318"
+  },
+  "shared": {
+    "education_stage": "小学",
+    "grade": "五年级",
+    "subject": "数学",
+    "duration": 45,
+    "curriculum_standard": "《义务教育数学课程标准（2022年版）》",
+    "standard_basis": "发展几何直观、推理意识和应用意识；探索并掌握三角形面积计算方法，能解决相关实际问题。",
+    "textbook": "教材版本与单元位置待教师核对",
+    "core_task": {
+      "teacher": "让学生独立尝试把三角形转化为已经会计算面积的图形。不要先给出拼摆方法。",
+      "student": "选择一个三角形，通过剪拼、画图或推理，说明怎样求出它的面积。"
+    },
+    "data_table": {
+      "type": "table",
+      "headers": ["三角形", "底/cm", "高/cm"],
+      "rows": [["A", "8", "6"], ["B", "5", "4"], ["C", "10", "3"]]
+    },
+    "p1": {
+      "teacher": "关注学生是否使用对应底边上的高。",
+      "student": "计算三角形 A、B、C 的面积，并写出计算过程。"
+    },
+    "p2": {
+      "teacher": "追问面积不变的依据，不接受只报结论。",
+      "student": "一个三角形的底扩大到原来的 2 倍，高不变，面积怎样变化？用公式或图说明理由。"
+    },
+    "exit_ticket": {
+      "teacher": "独立完成。按“会找对应高并正确解释 / 计算正确但解释不清 / 底高对应或除以2有误”记录。",
+      "student": "一块三角形标志牌的底是 12 cm，高是 7 cm。求面积，并用一句话解释为什么要除以 2。"
+    },
+    "look_fors": {
+      "type": "list",
+      "items": [
+        "能把两个全等三角形拼成平行四边形",
+        "能说清三角形与所拼图形的面积关系",
+        "能找到指定底边对应的高",
+        "能用新情境解释公式中的除以2"
+      ]
+    },
+    "misconceptions": {
+      "type": "table",
+      "headers": ["具体表现", "可能原因", "教师追问"],
+      "rows": [
+        ["直接用底×高", "忽略两个三角形与平行四边形的倍数关系", "拼成的平行四边形包含几个这样的三角形？"],
+        ["任取一条边作高", "没有建立底与高的对应关系", "这条高与所选底边垂直吗？"]
+      ]
+    }
+  },
+  "documents": [
+    {
+      "id": "lesson_plan",
+      "audience": "teacher",
+      "eyebrow": "小学五年级 · 数学 · 45分钟",
+      "title": "三角形的面积",
+      "meta": "教材位置待核对",
+      "sections": [
+        {
+          "heading": "课程依据与学习目标",
+          "blocks": [
+            {
+              "type": "callout",
+              "kind": "special",
+              "label": "课程依据",
+              "text": "《义务教育数学课程标准（2022年版）》：发展几何直观、推理意识和应用意识；探索并掌握三角形面积计算方法。"
+            },
+            {
+              "type": "list",
+              "label": "学习目标",
+              "items": [
+                "通过转化推导三角形面积公式",
+                "解释公式中除以2的意义",
+                "正确选择底和对应的高解决问题"
+              ]
+            },
+            {
+              "type": "labeled",
+              "label": "成功标准",
+              "text": "能画出或描述转化过程，写出正确公式，并在新情境中说明底、高和除以2的含义。"
+            }
+          ]
+        },
+        {
+          "heading": "学情、重点与难点",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "学生已经学习长方形和平行四边形面积。教材版本和本班实际错误样本尚未提供，先按常见学习起点设计。"
+            },
+            {
+              "type": "labeled",
+              "label": "重点",
+              "text": "经历转化并建立三角形面积与平行四边形面积的关系。"
+            },
+            {
+              "type": "labeled",
+              "label": "难点",
+              "text": "解释除以2的必要性，识别底与高的对应关系。"
+            },
+            {
+              "type": "from_shared",
+              "key": "misconceptions"
+            }
+          ]
+        },
+        {
+          "heading": "教学过程",
+          "blocks": [
+            {
+              "type": "phase_header",
+              "name": "诊断与提出问题",
+              "minutes": 5
+            },
+            {
+              "type": "paragraph",
+              "text": "复习平行四边形面积，展示一个不能直接套用旧公式的三角形，提出“能否转化为会算的图形”。"
+            },
+            {
+              "type": "phase_header",
+              "name": "独立探究与小组比较",
+              "minutes": 15
+            },
+            {
+              "type": "from_shared",
+              "key": "core_task"
+            },
+            {
+              "type": "phase_header",
+              "name": "交流、推导与辨析",
+              "minutes": 12
+            },
+            {
+              "type": "paragraph",
+              "text": "比较不同剪拼或补形方法，抽象出底、高与面积关系。用错误样例辨析为什么必须使用对应的高。"
+            },
+            {
+              "type": "phase_header",
+              "name": "变式应用",
+              "minutes": 8
+            },
+            {
+              "type": "from_shared",
+              "key": "data_table"
+            },
+            {
+              "type": "from_shared",
+              "key": "p1"
+            },
+            {
+              "type": "from_shared",
+              "key": "p2"
+            },
+            {
+              "type": "phase_header",
+              "name": "课堂检测",
+              "minutes": 5
+            },
+            {
+              "type": "from_shared",
+              "key": "exit_ticket"
+            }
+          ]
+        },
+        {
+          "heading": "板书与作业",
+          "blocks": [
+            {
+              "type": "paragraph",
+              "text": "板书主线：转化图示 → 平行四边形面积 = 底×高 → 三角形面积 = 底×高÷2 → 底和高必须对应。"
+            },
+            {
+              "type": "list",
+              "label": "作业",
+              "items": [
+                "基础：完成两道不同朝向三角形面积题",
+                "变式：判断给定底边对应的高",
+                "开放：设计一个面积为24平方厘米的三角形并说明"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "student_materials",
+      "audience": "student",
+      "eyebrow": "小学五年级 · 数学",
+      "title": "三角形的面积学习单",
+      "sections": [
+        {
+          "heading": "探究",
+          "blocks": [
+            {
+              "type": "group",
+              "blocks": [
+                {"type": "from_shared", "key": "core_task"},
+                {"type": "workspace", "size": "large"}
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "应用",
+          "blocks": [
+            {"type": "from_shared", "key": "data_table"},
+            {
+              "type": "group",
+              "blocks": [
+                {"type": "from_shared", "key": "p1", "label": "1"},
+                {"type": "workspace", "size": "med"}
+              ]
+            },
+            {
+              "type": "group",
+              "blocks": [
+                {"type": "from_shared", "key": "p2", "label": "2"},
+                {"type": "workspace", "size": "med"}
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "课堂检测",
+          "blocks": [
+            {
+              "type": "group",
+              "blocks": [
+                {"type": "from_shared", "key": "exit_ticket"},
+                {"type": "workspace", "size": "med"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "observation_template",
+      "audience": "teacher",
+      "eyebrow": "小学五年级 · 数学",
+      "title": "课堂观察记录：三角形的面积",
+      "sections": [
+        {
+          "heading": "观察重点",
+          "blocks": [
+            {"type": "from_shared", "key": "look_fors"},
+            {
+              "type": "fill_table",
+              "headers": ["学生/小组", "观察到的表征或解释", "下一步教学动作"],
+              "blank_rows": 8
+            }
+          ]
+        },
+        {
+          "heading": "常见错误",
+          "blocks": [
+            {"type": "from_shared", "key": "misconceptions"}
+          ]
+        },
+        {
+          "heading": "课堂检测记录",
+          "blocks": [
+            {"type": "from_shared", "key": "exit_ticket"},
+            {
+              "type": "cards",
+              "items": [
+                {"title": "达到目标", "text": "计算正确，能解释除以2并匹配底和高。"},
+                {"title": "接近目标", "text": "计算正确但解释不完整，或需要提醒才匹配底和高。"},
+                {"title": "需要再教学", "text": "仍直接底乘高，或无法确定对应的高。"}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

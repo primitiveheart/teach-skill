@@ -1,0 +1,4 @@
+interface:
+  display_name: "中国 K-12 课程设计"
+  short_description: "依据中国课程标准与教材体系生成可直接使用的教学设计和学生材料"
+  default_prompt: "Use $china-k12-lesson-planning to create a China-curriculum lesson package for my class."
