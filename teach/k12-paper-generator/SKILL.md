@@ -1,10 +1,11 @@
 ---
 name: k12-paper-generator
 description: "智能出题组卷与题库整理工具：解析用户上传的 zip 压缩题库（支持 txt/md/json/docx），一是按题型、难度、知识点标签分析并分门别类整理题库（四维归类生成题库地图、相似题检测、按年级·学科·知识点三级分类整理题型），二是按每日打卡、周测、月测、期中期末模拟、专题训练等场景智能组卷，三是依据学生学情（薄弱点/已掌握/分数段）从题库中智能挑题生成个性化整理册；所有试卷与整理册每道题均标注题目来源（学校/试卷类型/年份/原卷题号），便于追溯。当用户提到上传题库、整理题库、归类题目、挑题、按孩子情况出练习、组卷、出卷、打卡练习、周测、月测、模拟卷、专题训练、题目来源、出处标注、按年级学科知识点分类整理题型时使用。"
-agent_created: true
-slug: k12-paper-generator
-version: 1.0.0
-displayName: K12 智能题库工具
+metadata:
+  agent_created: true
+  slug: k12-paper-generator
+  version: "1.0.0"
+  displayName: K12 智能题库工具
 ---
 
 # 智能出题组卷与题库整理工具（k12-paper-generator）

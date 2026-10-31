@@ -1,29 +1,30 @@
 ---
 name: edu-teacher-ai-toolbox
-slug: "edu-teacher-ai-toolbox"
-version: 1.0.0
-displayName: 教师AI提效工具箱
 description: 面向中小学及高校教师的AI提效工具箱，提供备课助手、作业批改辅助、家校沟通、课件生成、学生数据整理等提示词模板与方法论脚手架，助力教师数字素养提升与教育数字化落地。
-category: education
-capability: teacher-ai-toolbox
-pricing: []
-agent_created: true
-tags:
-  - "教师AI"
-  - "AI提效"
-  - "备课助手"
-  - "教师工具箱"
-  - "提示词"
-  - "作业批改辅助"
-  - "家校沟通"
-  - "课件生成"
-  - "教育数字化"
-  - "教师数字素养"
-  - "AI助教"
-  - "教学效率"
-  - "智能备课"
-  - "学案生成"
-  - "教学脚手架"
+metadata:
+  slug: "edu-teacher-ai-toolbox"
+  version: "1.0.0"
+  displayName: 教师AI提效工具箱
+  category: education
+  capability: teacher-ai-toolbox
+  pricing: []
+  agent_created: true
+  tags:
+    - "教师AI"
+    - "AI提效"
+    - "备课助手"
+    - "教师工具箱"
+    - "提示词"
+    - "作业批改辅助"
+    - "家校沟通"
+    - "课件生成"
+    - "教育数字化"
+    - "教师数字素养"
+    - "AI助教"
+    - "教学效率"
+    - "智能备课"
+    - "学案生成"
+    - "教学脚手架"
 ---
 
 # 教师AI提效工具箱

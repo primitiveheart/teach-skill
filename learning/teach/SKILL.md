@@ -1,8 +1,10 @@
 ---
 name: teach
-description: Teach the user a new skill or concept, within this workspace.
-disable-model-invocation: true
-argument-hint: "What would you like to learn about?"
+description: Teach the user a new skill or concept within the current workspace over multiple sessions. Use only when the user explicitly asks to start or continue a structured learning workspace; do not trigger for ordinary explanations or one-off questions.
+compatibility: Generic Agent Skills clients can use this skill through explicit invocation. The original Claude Code invocation settings are preserved as metadata for clients that choose to interpret them.
+metadata:
+  disable-model-invocation: true
+  argument-hint: "What would you like to learn about?"
 ---
 
 The user has asked you to teach them something. This is a stateful request - they intend to learn the topic over multiple sessions.

@@ -1,17 +1,19 @@
 ---
-name: 教学资料检索
-name_en: Teaching Material Search
+name: teach-mat
 description: 本技能在用户要求查找、检索或准备中小学教学资料时使用，例如说"找一份高一物理教案""搜这节课的课件""给我 XX 知识点的习题/学案/试卷""准备公开课资料""对比两个版本的微课"，或"在本地文件夹/知识库里找 XX 教学资料"。覆盖教案、课件、习题、教学设计、微课、学案、试卷、备课资料等场景，按固定偏好（权威信源分级、只搜相关资料、冲突处理、标准化输出）产出可直接用于课堂的结构化资料。不适用于非检索类任务（如生成整本教材、学情分析、批改阅卷、替代教研审核）。
-description_en: Use this skill when the user asks to find, search, or prepare teaching materials for K-12 classrooms (lesson plans, slides, exercises, micro-lessons, study guides, test papers, design packs, etc.). Produces structured, classroom-ready output via a tiered source policy (authoritative CN portals first, optional local folder / KB scope, strict no-hallucination and conflict-handling rules). Triggers on phrases like "find a lesson plan", "search for physics exercises", "prepare public-class materials", "compare two micro-lessons", or "search my local folder for XX". Not for generating entire textbooks, learning analytics, grading, or replacing school-level pedagogy review.
-version: 1.0.1
-triggers:
-  - 找/搜/查/给/准备 + 教学资料（教案、课件、习题、学案、试卷、微课、教学设计、备课包）
-  - 高一物理教案、牛顿第二定律习题、这篇课文的课件 等「学段+学科+资料类型」组合
-  - 准备公开课资料、备课资料、复习专题、出一套卷子
-  - 对比两个版本的微课、核实这份资料准不准
-  - 在本地/知识库里找 XX 教学资料、从我的备课文件夹里搜
-  - 出现"知识点/课标/教材版本/学段"并伴随"找/给/搜"等动作词
-  - (English) "find a lesson plan for…", "search for … exercises", "prepare teaching materials", "look up … in my folder"
+metadata:
+  displayName: 教学资料检索
+  name_en: Teaching Material Search
+  description_en: Use this skill when the user asks to find, search, or prepare teaching materials for K-12 classrooms (lesson plans, slides, exercises, micro-lessons, study guides, test papers, design packs, etc.). Produces structured, classroom-ready output via a tiered source policy (authoritative CN portals first, optional local folder / KB scope, strict no-hallucination and conflict-handling rules). Triggers on phrases like "find a lesson plan", "search for physics exercises", "prepare public-class materials", "compare two micro-lessons", or "search my local folder for XX". Not for generating entire textbooks, learning analytics, grading, or replacing school-level pedagogy review.
+  version: "1.0.1"
+  triggers:
+    - 找/搜/查/给/准备 + 教学资料（教案、课件、习题、学案、试卷、微课、教学设计、备课包）
+    - 高一物理教案、牛顿第二定律习题、这篇课文的课件 等「学段+学科+资料类型」组合
+    - 准备公开课资料、备课资料、复习专题、出一套卷子
+    - 对比两个版本的微课、核实这份资料准不准
+    - 在本地/知识库里找 XX 教学资料、从我的备课文件夹里搜
+    - 出现"知识点/课标/教材版本/学段"并伴随"找/给/搜"等动作词
+    - (English) "find a lesson plan for…", "search for … exercises", "prepare teaching materials", "look up … in my folder"
 ---
 
 # 教学资料检索
@@ -36,7 +38,7 @@ triggers:
 - 校验某份资料准确性，或对比多来源差异。
 - 指定本地文件夹 / 知识库，要求"在里面找 / 搜 XX 教学资料"。
 
-> 顶部 `triggers` 字段已给出显式触发词清单，Agent 可在不依赖 description 语义猜测的情况下直接命中启用；若用户未显式命中但有上列意图，仍按 description 自然启用。
+> `metadata.triggers` 给出显式触发词清单；是否读取该元数据取决于客户端。通用触发仍以顶部 `description` 的语义为准。
 
 ### 适用边界（明确不做什么，避免误调用）
 - 仅做"检索 + 整理 + 校验 + 输出"，**不**生成整本教材、**不**做学情分析 / 阅卷批改、**不**替代学校教研审核、**不**编写需版权授权的整套 commercial 教辅。

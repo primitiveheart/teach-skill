@@ -1,11 +1,12 @@
 ---
 name: exam-paper-formater
-slug: exam-paper-formater
-version: 1.0.0
-displayName: 试卷排版
-summary: 把题目内容排版成可直接印刷的 PDF 试卷（试卷+答案卷+答题卡），支持 LaTeX 与 HTML 双管线、密封线、公式与理科图形。
-tags: [试卷, 排版, LaTeX, PDF, 教育]
 description: 试卷排版 — 把用户提供的题目内容排版成可直接印刷的 PDF 试卷（LaTeX 主管线 + HTML 回退）。必须让用户选择纸张大小（A4/A3/B5/A5/正度8开 260×370mm/自定义）、方向（纵向/横向）、每页栏数（1/2/3 三选一）；支持密封线、得分表、数学/物理/化学公式与化学式排版，支持理科图形绘制（几何/函数图像/电路图/光路图/受力图/实验装置图/统计图/流程图等），支持中文卷与纯英文卷（article 类）；产出三份独立 PDF：试卷 + 答案卷（默认 A4 竖向）+ 答题卡（固定 A4 纵向）。**输入文档只接受 docx / html / txt / md（或对话内文本），其他格式（pdf/doc/图片等）一律拒绝，请用户转成上述格式后排版。**只要用户提到"试卷排版"、"排版一份试卷"、"把题目做成 PDF"、"A3 三栏卷"、"8 开卷/正度 8 开"、"密封线"、"答题卡"、"排版这份卷子"、"出一份可打印的试卷 PDF"，或上传题目文档（文本/DOCX/HTML/TXT/Markdown）要求排版、印刷输出，都应使用本 skill。
+metadata:
+  slug: exam-paper-formater
+  version: "1.0.1"
+  displayName: 试卷排版
+  summary: 把题目内容排版成可直接印刷的 PDF 试卷（试卷+答案卷+答题卡），支持 LaTeX 与 HTML 双管线、密封线、公式与理科图形。
+  tags: [试卷, 排版, LaTeX, PDF, 教育]
 ---
 
 # Exam Paper Formater — 试卷排版专用 skill

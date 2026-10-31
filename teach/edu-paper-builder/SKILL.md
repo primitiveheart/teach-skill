@@ -1,37 +1,38 @@
 ---
 name: edu-paper-builder
-slug: "edu-paper-builder"
-version: 1.2.1
-displayName: 智能组卷出题
 description: 面向中小学教师的智能组卷与试卷生成助手，基于题库按知识点与难度分布命题，支持章节测验、期中期末、错题组卷与模拟考试，自动产出试卷、答案与评分标准。触发词：智能组卷、试卷生成、题库、命题、难度分布、错题组卷、期中考试卷、期末考试卷。
-category: education
-capability: paper-builder
-pricing: []
-agent_created: true
-tags:
-  - "智能组卷"
-  - "出卷"
-  - "试卷生成"
-  - "题库"
-  - "命题"
-  - "难度分布"
-  - "错题组卷"
-  - "期中考试"
-  - "期末考试"
-  - "模拟考试"
-  - "教师出题"
-  - "组卷"
-  - "智能出卷"
-  - "考试"
-  - "练习题"
-  - "单元测试"
-  - "期中期末"
-  - "教师工具"
-  - "知识点覆盖"
-  - "自动组卷"
-  - "选题"
-  - "试卷排版"
-  - "教辅"
+metadata:
+  slug: "edu-paper-builder"
+  version: "1.2.1"
+  displayName: 智能组卷出题
+  category: education
+  capability: paper-builder
+  pricing: []
+  agent_created: true
+  tags:
+    - "智能组卷"
+    - "出卷"
+    - "试卷生成"
+    - "题库"
+    - "命题"
+    - "难度分布"
+    - "错题组卷"
+    - "期中考试"
+    - "期末考试"
+    - "模拟考试"
+    - "教师出题"
+    - "组卷"
+    - "智能出卷"
+    - "考试"
+    - "练习题"
+    - "单元测试"
+    - "期中期末"
+    - "教师工具"
+    - "知识点覆盖"
+    - "自动组卷"
+    - "选题"
+    - "试卷排版"
+    - "教辅"
 ---
 # 智能组卷
 
